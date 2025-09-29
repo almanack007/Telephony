@@ -1,4 +1,4 @@
-livekit-agents
+livekit-agents>=1.2.0
 livekit-plugins-deepgram
 livekit-plugins-openai
 livekit-plugins-cartesia
