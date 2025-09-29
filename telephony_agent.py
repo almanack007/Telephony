@@ -67,7 +67,8 @@ async def entrypoint(ctx: JobContext):
 if __name__ == "__main__":
     cli.run_app(
         worker_options=WorkerOptions(
-            entrypoint_fnc=entrypoint,
-            http_routes=[web.post("/", handle_request)],
-        ),
+    entrypoint_fnc=entrypoint,
+    routes=[web.post("/", handle_request)],
+),
+,
     )
