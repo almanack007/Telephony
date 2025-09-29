@@ -65,10 +65,10 @@ async def entrypoint(ctx: JobContext):
 
 # This is the main "ON" switch for your robot.
 if __name__ == "__main__":
-    cli.run_app(
-        worker_options=WorkerOptions(
-    entrypoint_fnc=entrypoint,
-    routes=[web.post("/", handle_request)],
-),
-,
-    )
+    # This is the NEW, correct code
+cli.run_app(
+    worker_options=WorkerOptions(
+        entrypoint_fnc=entrypoint,
+        routes=[web.post("/", handle_request)] # <-- COMMA REMOVED
+    ),
+)
