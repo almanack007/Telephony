@@ -64,11 +64,12 @@ async def entrypoint(ctx: JobContext):
     logger.info("Agent session is over.")
 
 # This is the main "ON" switch for your robot.
+
 if __name__ == "__main__":
-    # This is the NEW, correct code
-cli.run_app(
-    worker_options=WorkerOptions(
-        entrypoint_fnc=entrypoint,
-        routes=[web.post("/", handle_request)] # <-- COMMA REMOVED
-    ),
-)
+    cli.run_app(
+        worker_options=WorkerOptions(
+            entrypoint_fnc=entrypoint,
+            routes=[web.post("/", handle_request)]
+        )
+    )
+
