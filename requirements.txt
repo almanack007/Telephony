@@ -1,8 +1,8 @@
 livekit-agents>=1.2.0
-livekit-plugins-deepgram
-livekit-plugins-openai
-livekit-plugins-cartesia
-livekit-plugins-silero
+livekit_plugins_deepgram
+livekit_plugins_openai
+livekit_plugins_cartesia
+livekit_plugins_silero
 aiohttp
 twilio
 python-dotenv
